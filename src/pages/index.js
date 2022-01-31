@@ -7,8 +7,6 @@ import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
 import Services from '../components/Services/Services'
 import Sidebar from '../components/Sidebar'
-import Signin from '../components/Signin/Signin';
-import { Route } from 'react-router-dom';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
