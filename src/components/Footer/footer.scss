@@ -1,0 +1,75 @@
+.footer{
+    background: #010606;
+    color: white;
+    padding: 50px 50px;
+
+    &__content{
+        max-width: 1000px;
+    }
+
+    &__top{
+        margin-top: 30px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    &__title{
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: rgb(241, 241, 241);
+        letter-spacing: 1px;
+    }
+
+    &__descrs{
+        font-size: 1rem;
+        line-height: 1.8;
+        color: rgb(226, 226, 226);
+        letter-spacing: 0.5px;
+    }
+
+    &__buttom{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(226, 226, 226);
+    }
+
+    &__logo{
+        color: rgb(226, 226, 226);
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: flex;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__icon{
+        background: #fff;
+        border-radius: 70%;
+        max-width: 35px;
+        color: white;
+        z-index: 2;
+    }
+
+    @media(max-width: 900px) {
+        .footer{
+            &__top{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            &__buttom{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+        }
+    }
+}
